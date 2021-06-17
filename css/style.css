@@ -1,0 +1,149 @@
+:root {
+    --accent : #F16822;
+    --text: #333333 ;
+}
+
+h1{
+    color: var(--accent);
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+body{
+    font-size: 1.6rem;
+}
+
+.button-carousel{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0%;
+    border-style: none;
+    background-color: black;
+}
+
+.button-carousel:hover{
+    background-color: var(--accent);
+}
+
+/*layout*/
+.container{
+    width: 100%;
+    max-width: 128rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Navigation et Header */
+
+.nav-list{
+    display: flex;
+    text-align: center;
+}
+
+.nav-header{
+    padding-top: 1.5rem;
+}
+
+.nav-list-item{
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    color:#333333;
+}
+.header-title{
+    font-size: 2rem;
+}
+.logo-description p{
+    font-size: 1.4rem;
+}
+.logo-header{
+    display: flex;
+    padding-top: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.site-header{
+    min-height: 10rem;
+}
+
+/* HERO */
+
+.section-hero{
+    z-index: 0;
+    min-height:96rem ;
+    text-align: center;
+    padding-top: 40.3rem;
+}
+
+.background-hero{
+    z-index: 1;
+    min-height: 96rem;
+    background-image: url(../img/slider1.png);
+}
+
+.button-slider{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.section-hero p{
+        color: var(--text);
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        padding-right: auto;
+        padding-left: auto;
+}
+
+.list-button-hero{
+    padding-top: 23rem;
+}
+/*main */ 
+
+.services{
+    padding-bottom: 17rem;
+    padding-top: 17rem;
+    text-align: center;
+}
+.list-services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.figure-item {
+    display: grid;
+    background-color: #EEEEEE;
+    width: 12.5rem;
+    height: 12.5rem;
+    justify-items: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.list-services-item{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.list-services-item img{
+    width: 5rem;
+    height: 5rem;
+}
+.para-services{
+    max-width: 80rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
