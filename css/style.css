@@ -11,6 +11,9 @@ h1{
 h2{
     font-size: 4.8rem;
 }
+h3{
+    font-size: 4rem;
+}
 body{
     font-size: 1.6rem;
 }
@@ -26,7 +29,9 @@ body{
 .button-carousel:hover{
     background-color: var(--accent);
 }
-
+.button-white{
+    background-color: white;
+}
 /*layout*/
 .container{
     width: 100%;
@@ -111,6 +116,9 @@ header a{
 }
 /*main */ 
 
+
+/*Services */ 
+
 .services{
     padding-bottom: 17rem;
     padding-top: 17rem;
@@ -146,4 +154,107 @@ header a{
     margin-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* About UBI*/
+
+.about-ubi{
+    background-image: url(../img/bokehback.png);
+    text-align: center;
+}
+.about-ubi h2{
+    color: var(--accent);
+}
+.about-ubi p{
+    max-width: 80rem;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-descritption{
+    padding-top: 17rem;
+}
+.list-button-about{
+   color:  white;
+    margin-bottom: 3rem;
+}
+
+/* Post */
+
+.latest-post{
+    text-align: center;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+
+}
+.latest-post p{
+    font-size: 1.6rem;
+}
+.list-latest-post {
+    margin-top: 11rem;
+    list-style: none;
+}
+.grid-container-post{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+.list-latest-post-item{
+    min-height: 50rem;
+    text-align:center;
+    padding:2.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+.list-latest-post-item-description{
+    padding-top:7rem
+}
+.list-latest-post-item-description p{
+    padding-top: 2.7rem;
+}
+
+/* Fun fact section */
+
+.background-fun{
+    z-index: 2;
+    position: relative;
+    min-height: 60rem;
+    background-image: url(../img/lauren-mancke-aOC7TSLb1o8-unsplash.png);
+}
+.fun-fact{
+    z-index: 1;
+    position: relative;
+    color: black;
+    text-align: center;
+    align-content: center;
+}
+.fun-fact-flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.overflow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/* Contact */ 
+
+.background-contact{
+    background-image: url(../img/rect.png);
+    min-height: 60rem;
+}
+.contact-flexbox{
+    display: flex;
+}
+.img-contact{
+    display: flex;
+    justify-items: center;
+    border-radius: 50%;
 }
