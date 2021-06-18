@@ -94,6 +94,7 @@ body {
 
 /* Navigation */
 .toggle-menu {
+    margin: 2.5rem;
     padding: 1rem 1rem;
     color: var(--inverted);
     background-color: rgba(0,0,0,.15);
@@ -128,6 +129,7 @@ body {
 }
 
 .menu-link {
+    margin-top: 1.6rem;
     display: block;
     padding: 1.6rem;
     font-size: 1.4rem;
@@ -184,7 +186,7 @@ header a{
 
 .site-header{
     opacity: 0.9;
-    min-height: 10rem;
+    min-height: 8rem;
     position: sticky;
     top:-1px;
     background-color: white;
@@ -370,6 +372,7 @@ header a{
 .list-latest-post {
     margin-top: 11rem;
     list-style: none;
+    transition: all .2s ease-in-out;
 }
 .grid-container-post{
     display: grid;
@@ -387,6 +390,7 @@ header a{
 .list-latest-post-item:hover{
     background: #EEEEEE;
     transition: .3;
+    transform: scale(1.1);
 }
 .list-latest-post-item-description{
     padding-top:7rem
@@ -496,6 +500,7 @@ header a{
 
 
 footer{
+    padding:2rem;
     background-color: #333333;
     color: white;
 }
