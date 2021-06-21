@@ -64,7 +64,7 @@
                                 <p class="p-hero">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-color: red;">
+                        <div class="swiper-slide " style="background-color: red;">
                             <div class="container">
                                 <h1>At Ubiquity , We care</h1>
                                 <p class="p-hero">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
@@ -94,11 +94,17 @@
                                 <p class="p-hero">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
                             </div>
                         </div>
+                        <div class="swiper-slide" style="background-color: green;">
+                            <div class="container">
+                                <h1>At Ubiquity , We care</h1>
+                                <p class="p-hero">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="swiper-pagination"></div>  
-                    <div><img class="swiper-button-next" src="img/arrow-right.svg"></div>
-                    <div ><img class="swiper-button-prev" src="img/arrow-circle-left-3.svg"></div>
+                    <div class="container"><img class="swiper-button-next" src="img/arrow-right.svg"></div>
+                    <div class="container"><img class="swiper-button-prev" src="img/arrow-circle-left-3.svg"></div>
 
                 </div>  
             </section>
@@ -418,15 +424,18 @@
               pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
+                clickable:true,
               },
               autoplay: {
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
               },
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
+              
+
             });
           </script>
 
