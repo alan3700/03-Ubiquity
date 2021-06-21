@@ -93,7 +93,7 @@ body {
 /* Navigation */
 .toggle-menu {
     margin: 2.5rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     color: var(--inverted);
     border: 0;
     transition: .3s;
@@ -107,7 +107,9 @@ body {
     background-color: white;
 }
 
-
+.menu-item{
+    padding-top: 1.6rem;
+}
 .menu {
     position: absolute;
     top: 100%;
@@ -128,7 +130,6 @@ body {
 }
 
 .menu-link {
-    margin-top: 1.6rem;
     display: block;
     padding: 1.6rem;
     font-size: 1.4rem;
@@ -148,7 +149,6 @@ body {
     .toggle-menu {
         display: none;
     }
-
     .menu,
     .menu[hidden] {
         display: flex;
@@ -156,6 +156,8 @@ body {
         position: static;
         transform: translateX(0%);
     }
+    
+    
 } 
 
 .header-container{
@@ -295,7 +297,7 @@ header a{
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (max-width:48em) {
+@media screen and (max-width:62em) {
     .services .list-services{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -363,6 +365,7 @@ header a{
 }
 .latest-post p{
     font-size: 1.6rem;
+    padding-top: 3rem;
 }
 .list-latest-post {
     margin-top: 11rem;
