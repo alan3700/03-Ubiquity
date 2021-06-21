@@ -81,9 +81,6 @@ body{
 
 
 
-
-/* Navigation et Header */
-
 body {
     font-family: sans-serif;
     font-size: 1.6rem;
@@ -163,6 +160,10 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
+/*Header */ 
+
 
 header{
     width: 100%;
@@ -446,6 +447,9 @@ header a{
     opacity: 0.5;
     z-index: -100;
 }
+.fun-fact p{
+    font-weight: bold;
+}
 .span{
     font-size: 6.4rem;
     color: var(--accent);
@@ -470,6 +474,7 @@ header a{
 /* Contact */ 
 
 .background-contact{
+    background-size: cover;
     background-image: url(../img/rect.png);
     min-height: 60rem;
     text-align: center;
@@ -491,16 +496,20 @@ header a{
 }
 
 .list-button-contact{
-    padding-top: 14rem;
+    padding-top: 12rem;
 }
 
-
+@media screen and (max-width:36em) {
+    .contact-flexbox{
+        display: inline;
+    }
+}
 /* Footer */ 
 
 
 
 footer{
-    padding:2rem;
+    padding-top: 10rem;
     background-color: #333333;
     color: white;
 }
@@ -512,7 +521,7 @@ footer h3{
 .recent-comments,
 .tags,
 .ubiquity{
-    min-width: 20rem;
+    min-width: 22rem;
     margin:1rem;
 }
 .recent-post-list,

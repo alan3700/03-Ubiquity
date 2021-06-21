@@ -7,6 +7,10 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/help.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <title>Ubiquity</title>
 </head>
 <body>
@@ -26,19 +30,19 @@
                     <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
                     <ul id="menu" class="menu" role="list" hidden>
                         <li class="menu-item">
-                            <a href="#" class="menu-link menu-link-active">Home</a>
+                            <a href="#home" class="menu-link menu-link-active">Home</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">About</a>
+                            <a href="#About" class="menu-link">About</a>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">Portfolio</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Blog</a>
+                            <a href="#Blog" class="menu-link">Blog</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Contact</a>
+                            <a href="#Contact" class="menu-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -148,64 +152,62 @@
                     <button class="button-carousel"></button>
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, accusantium!</p>
-                <ul class="list-latest-post">
-                    <div class="grid-container-post">
-                        <li class="list-latest-post-item">
-                            <figure class="figure-latest-post">
-                                <img src="img/PhotoBlog.png" alt="" class="img-latest-post">
-                            </figure>
-                            <div class="list-latest-post-item-description">
-                                <h3>Blog Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
-                                <a class="link-article"></a>
-                            </div>
-                        </li>
-                        <li class="list-latest-post-item">
-                            <figure class="figure-latest-post">
-                                <img src="img/PhotoBlog1.png" alt="" class="img-latest-post">
-                            </figure>
-                            <div class="list-latest-post-item-description">
-                                <h3>Blog Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
-                            </div>esentium est possimus!</p>
-                        </li>
-                        <li class="list-latest-post-item">
-                            <figure class="figure-latest-post">
-                                <img src="img/PhotoBlog2.png" alt="" class="img-latest-post">
-                            </figure>
-                            <div class="list-latest-post-item-description">
-                                <h3>Blog Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
-                            </div>
-                        </li>
-                        <li class="list-latest-post-item">
-                            <figure class="figure-latest-post">
-                                <img src="img/PhotoBlog3.png" alt="" class="img-latest-post">
-                            </figure>
-                            <div class="list-latest-post-item-description">
-                                <h3>Blog Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
-                            </div>
-                        </li>
-                        <li class="list-latest-post-item">
-                            <figure class="figure-latest-post">
-                                <img src="img/PhotoBlog.png" alt="" class="img-latest-post">
-                            </figure>
-                            <div class="list-latest-post-item-description">
-                                <h3>Blog Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
-                            </div>
-                        </li>
-                        <li class="list-latest-post-item">
-                            <figure class="figure-latest-post">
-                                <img src="img/PhotoBlog1.png" alt="" class="img-latest-post">
-                            </figure>
-                            <div class="list-latest-post-item-description">
-                                <h3>Blog Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
-                            </div>
-                        </li>
-                    </div>
+                <ul class="list-latest-post grid-container-post">    
+                    <li class="list-latest-post-item">
+                        <figure class="figure-latest-post">
+                            <img src="img/PhotoBlog.png" alt="" class="img-latest-post">
+                        </figure>
+                        <div class="list-latest-post-item-description">
+                            <h3>Blog Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
+                            <a class="link-article"></a>
+                        </div>
+                    </li>
+                    <li class="list-latest-post-item">
+                        <figure class="figure-latest-post">
+                            <img src="img/PhotoBlog1.png" alt="" class="img-latest-post">
+                        </figure>
+                        <div class="list-latest-post-item-description">
+                            <h3>Blog Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
+                        </div>esentium est possimus!</p>
+                    </li>
+                    <li class="list-latest-post-item">
+                        <figure class="figure-latest-post">
+                            <img src="img/PhotoBlog2.png" alt="" class="img-latest-post">
+                        </figure>
+                        <div class="list-latest-post-item-description">
+                            <h3>Blog Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
+                        </div>
+                    </li>
+                    <li class="list-latest-post-item">
+                        <figure class="figure-latest-post">
+                            <img src="img/PhotoBlog3.png" alt="" class="img-latest-post">
+                        </figure>
+                        <div class="list-latest-post-item-description">
+                            <h3>Blog Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
+                        </div>
+                    </li>
+                    <li class="list-latest-post-item">
+                        <figure class="figure-latest-post">
+                            <img src="img/PhotoBlog.png" alt="" class="img-latest-post">
+                        </figure>
+                        <div class="list-latest-post-item-description">
+                            <h3>Blog Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
+                        </div>
+                    </li>
+                    <li class="list-latest-post-item">
+                        <figure class="figure-latest-post">
+                            <img src="img/PhotoBlog1.png" alt="" class="img-latest-post">
+                        </figure>
+                        <div class="list-latest-post-item-description">
+                            <h3>Blog Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat numquam maxime praesentium est possimus!</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -380,6 +382,12 @@
             </div>
         </div>
     </footer>
+
+
     <script src="js/menu.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 </html>
