@@ -145,7 +145,7 @@ body {
     color: white;
 }
 
-@media screen and (min-width: 36em) { 
+@media screen and (min-width: 48em) { 
     .toggle-menu {
         display: none;
     }
